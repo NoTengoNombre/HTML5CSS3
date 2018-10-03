@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Lanzar Modernizr</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--El componente HTML5SHIV de las librerías Modernizr 
+        nos ayuda a crear webs compatibles con las etiquetas 
+        nuevas de HTML5 que funcionan en todos los navegadores.-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>-->
+        <script src="libreriaJS/modernizr-custom_dev.js"></script>
+        <script>
+            Modernizr.load({
+                test: Modernizr.geolocation,
+                yep: 'geo-extras.js',
+                nope: 'geo-polyfill.js',
+                both: 'migeolocalizacion.js',
+                // Accion que queremos que se haga 
+                complete: function () {
+                    inicializar - geolocalizacion();
+                }
+            });
+
+        </script>
+    </head>
+    <body>
+        <div id="micaja"> 
+            Queremos aplicar sombra con CSS3 en los navegadores <br>
+            que lo permitan y emular ese sombreado por medio <br>
+            de estilos CSS clásicos en los navegadores que <br>
+            no soporten el atributo box-shadow.<br>
+        </div>
+    </body>
+</html>

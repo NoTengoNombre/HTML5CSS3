@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Estructura Basica</title>
+        <style type="text/css">
+            /* Format the <div> that represents the header (as a blue, bordered box). */
+            .Header {
+                background-color: #7695FE;
+                border: thin #336699 solid;
+                padding: -10px;;
+                margin: -10px;;
+                text-align: center;
+            }
+            /* Format any <h1> headings in the header <div> (that's the article title). */
+            .Header h1 {
+                color: white;
+                font-size: xx-large;
+            }
+            /* Format the subtitle in the header <div>. */
+            .Header .Teaser {
+                margin: 0px;
+                font-weight: bold;
+            }
+
+            /* Format the byline in the header <div>. */
+            .Header .Byline {
+                font-style: italic;
+                font-size: small;
+                margin: 0px;
+            }
+
+            .Content {
+                margin-left: 500px;
+            }
+
+            .Footer {
+                background-color: #7695FE;
+                border: thin #336699 solid;
+                padding: -10px;;
+                margin: -10px;;
+                text-align: center;
+            }
+
+            .Disclaimer{
+                background-color: #7695FE;
+                width: 50px;
+                border-radius: 12px;
+            }
+
+            .LeadIn{
+                background-color: #7695FE;
+                width: 100px;
+                border-radius: 12px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <header class="Header">
+            <h1>A la nueva Manera HTML5</h1>
+            <p class="Teaser">Pagina HTML5</p>
+            <p class="Byline">por Daniel</p>
+        </header>
+
+        <div class="Content">
+            <p><span class="LeadIn">Utilizamos un span</span>, dentro de un parrafo ...</p>
+            <p>...
+            <h2>Parrafo 2</h2>
+        </div>
+
+        <footer class="Footer">
+            <p class="Disclaimer">Pie de Pagina...
+            <p>
+                <a href="http://mi.viewnext.com">Mas sobre nosotros...</a>
+            </p>
+            <p>Copyright © 2015</p>
+        </footer>
+    </body>
+</html>

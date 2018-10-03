@@ -9,6 +9,25 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--El componente HTML5SHIV de las librerías Modernizr nos ayuda a crear webs compatibles con las etiquetas nuevas de HTML5 que funcionan en todos los navegadores.-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script>
+            
+            console.log(Modernizr.boxshadow ? "SI soporta sombra de caja" : "NO soporta sombra de caja");
+
+            if (Modernizr.canvas) {
+                alert("Soporta canvas ");
+            } else {
+                alert("NO Soporta canvas ");
+            }
+
+            Modernizr.addTest('itsTuesday', function () {
+                var d = new Date();
+                return d.getDay() === 2;
+            });
+
+
+        </script>
     </head>
     <body>
         <div>TODO write content</div>
